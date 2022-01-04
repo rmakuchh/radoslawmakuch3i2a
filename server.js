@@ -8,10 +8,11 @@ const PORT = process.env.PORT || 3000; // bardzo istotna linijka - port zostaje 
 
 var name = {imie: "Radosław", nazwisko: "Makuch", klasa:"3i2", grupa:"Ia"}
 
-app.get("/", function (req, res) {
+app.get("/data", function (req, res) {
     res.send(name);
 })
 
 app.listen(PORT, function () {
     console.log("start serwera na porcie " + PORT)
 })
+
